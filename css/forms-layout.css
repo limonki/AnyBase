@@ -1,0 +1,177 @@
+/**
+ * Forms layout CSS.
+ *
+ * @since 1.0
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+form /*>*/ *, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form /*>*/ .title,
+form /*>*/ .description,
+form /*>*/ .input-submit {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #8f8f8f;
+}
+
+form /*>*/ textarea {height: 60px; resize: none; padding: 5px; margin-bottom: 16px;}
+
+form /*>*/ .title-r {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 16px;
+  color: #8f8f8f;
+}
+
+.button-file {
+  padding: 10px 25px 10px 15px;
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  color: #ffffff;
+  background: #d3394c;
+  display: inline-block;
+}
+
+.button-file:hover { background: #722040; cursor: pointer; }
+.button-file img { vertical-align: middle; padding: 0 10px; margin: 0; }
+
+input[type="file"] { display: none; }
+
+.title-time-date {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #8f8f8f;
+  width: 70px;
+  margin-left: 20px;
+}
+
+form /*>*/ .title {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+form /*>*/ .description {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  vertical-align: middle;
+  resize: none;
+  width: 100%;
+  height: 20%;
+}
+
+form /*>*/ .form-additional-data {display: none;}
+form /*>*/ .checkbox {margin: 10px 0 10px 0;}
+
+form /*>*/ .select {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  padding: 2px 5px;
+}
+
+form /*>*/ .select /*>*/ .bold {
+  font-weight: bold;
+}
+
+form /*>*/ .separator {padding-right: 5px;}
+form /*>*/ .bold {font-weight: bold;}
+form /*>*/ select[name='add-after'] {margin: 0 0 0 20px;}
+
+.yes-no {
+  font-size: 24px;
+  color: #0066cc;
+  text-align: center;
+}
+
+.date {
+  margin: 0 0 10px 0;
+  padding: 5px 20px;
+  vertical-align: middle;
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #8f8f8f;
+}
+
+a.underline {text-decoration: underline;}
+
+.center {text-align: center;}
+.inline {display: inline-block;}
+
+.btn {
+  vertical-align: top;
+  display: inline-block;
+  min-width: 110px;
+  padding: 10px 15px 12px;
+  font: 700 12px/1 'Open Sans', sans-serif;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 1px rgba(0,0,0,.1), inset 0 -10px 20px rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.btn.sec {
+  color: #777;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  background: #fff;
+}
+
+.btn.sec:hover { background: #f5f5f5 }
+
+.btn.pri {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+.set.blue .btn.pri { background: #59d }
+.set.green .btn.pri { background: #6b6 }
+.set.red .btn.pri { background: #d33 }
+.set.black .btn.pri { background: #555 }
+
+.set.blue .btn.pri:hover { background: #48c }
+.set.green .btn.pri:hover { background: #5a5 }
+.set.red .btn.pri:hover { background: #c22 }
+.set.black .btn.pri:hover { background: #444 }
+
+.btn.sec.ico,
+.btn.pri.ico {
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.btn.sec.ico:before,
+.btn.pri.ico:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  padding: 10px 0 12px;
+  font-family: fontawesome;
+  text-align: center;
+  border-radius: 3px 0 0 3px;
+  background: rgba(0,0,0,.15);
+}
+
+.btn.sec.ico:before {
+  background: rgba(0,0,0,.08);
+}
+
+.set.blue .btn.sec.ico:before { content: '\f053' }
+.set.green .btn.sec.ico:before { content: '\f05e' }
+.set.red .btn.sec.ico:before { content: '\f05e' }
+.set.black .btn.sec.ico:before { content: '\f0c4' }
+
+.set.blue .btn.pri.ico:before { content: '\f054' }
+.set.green .btn.pri.ico:before { content: '\f00c' }
+.set.red .btn.pri.ico:before { content: '\f014' }
+.set.black .btn.pri.ico:before { content: '\f0c4' }
+
+[type="submit"] { border: none; }

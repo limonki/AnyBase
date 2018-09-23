@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Montserrat-Light;
+  background: #efefef;
+}
+
+#main {
+  padding: 32px;
+  margin-top: 12px;
+  width: 95%;
+  height: 95%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(210,210,210,1);
+  -moz-box-shadow: 0px 0px 24px 1px rgba(210,210,210,1);
+  box-shadow: 0px 0px 24px 1px rgba(210,210,210,1);
+  position: relative;
+}
+
+.center {text-align: center;}
+.no-margin-padding {margin: 0; padding: 0;}
+
+a {
+  text-decoration: none;
+  color: #4a79a9;
+}
+
+a:hover {color: #20354a;}
+
+label {font-size: 12px;}
+h2 {margin: 0 0 16px 0;}
+h5 {margin: 0;}
+red {color: red;}
+textarea {height: 60px; resize: none;}
+.f-left {float: left;}
+.f-right {float: right;}
+
+.title {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #8f8f8f;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.submit {margin-top: 16px;}
+
+.help {
+  transition: all 0.5s;
+  font-weight: bold;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  margin: 4px 4px 4px 20px;
+  background: #d5d5d5;
+  border-radius: 24px;
+  display: inline-block;
+}
+
+.help:after {
+  position: relative;
+  top: 12.5%;
+  content: '\?';
+}
+
+.help:hover {
+  background: #ffad33;
+  transition: all 0.5s;
+}
+
+.help-box {
+  background: rgba(70, 70, 70, 0.7);
+  width: 250px;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  color: #ffffff;
+  display: none;
+  font-size: 12px;
+}
+
+.register {text-align: justify; color: #f47742;}
+
+@media only screen and (min-width: 768px) {
+	#main {
+    width: 50%;
+    height: auto;
+  }
+
+  .t-right {text-align: right;}
+
+  #validation {padding: 40px;}
+  .validation-body {padding: 20px;}
+}

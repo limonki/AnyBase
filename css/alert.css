@@ -1,0 +1,74 @@
+/**
+ * Alerts CSS.
+ *
+ * @since 1.0
+**/
+
+.alert {display: none;}
+
+.alert-info {
+	margin: 5px;
+	background: #d9edf6;
+	padding: 5px 15px;
+	border: 1px solid #c7e5e5;
+	border-radius: 5px;
+	color: #476a7e;
+  text-align: center;
+}
+
+.alert-warning {
+	margin: 5px;
+	background: #fdf8e4;
+	padding: 5px 15px;
+	border: 1px solid #f0eed9;
+	border-radius: 5px;
+	color: #958c6d;
+  text-align: center;
+}
+
+.alert-danger {
+	margin: 5px;
+	background: #f2dedd;
+	padding: 5px 15px;
+	border: 1px solid #e1d1d2;
+	border-radius: 5px;
+	color: #7c5b62;
+  text-align: center;
+}
+
+.alert-success {
+	margin: 15px;
+	background: #def0d8;
+	padding: 5px 15px;
+	border: 1px solid #d7e6cf;
+	border-radius: 5px;
+	color: #647e61;
+  text-align: center;
+}
+
+.alert-info img, .alert-warning img, .alert-danger img, .alert-success img {
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  .alert-info {
+  	margin: 15px;
+  	padding: 15px 30px;
+  }
+
+  .alert-warning {
+  	margin: 15px;
+  	padding: 15px 30px;
+  }
+
+  .alert-danger {
+  	margin: 15px;
+  	padding: 15px 30px;
+  }
+
+  .alert-success {
+  	margin: 15px;
+  	padding: 15px 30px;
+  }
+}

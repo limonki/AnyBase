@@ -1,0 +1,169 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+body {
+  background-color: #efefef;
+  font-family: Montserrat-Light;
+}
+
+#top-bar {padding: 32px;}
+
+.elem {
+  display: none;
+  color: #ffffff;
+}
+
+.right {float: right;}
+
+.center {text-align: center;}
+.no-margin-padding {margin: 0; padding: 0;}
+
+a {
+  text-decoration: none;
+  color: #4a79a9;
+}
+
+a:hover {color: #20354a;}
+
+.cookies-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cookies-button {
+  border: 2px solid #e76a68;
+  border-radius: 32px;
+  padding: 8px;
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.active {background: #e76a68;}
+.margin-8 {margin: 8px;}
+
+#cookies {
+  font-size: 12px;
+  line-height: 2em;
+	width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.65);
+  color: #ffffff;
+  padding: 16px;
+}
+
+#cookies .close {
+  float: right;
+  height: 15px;
+  width: 15px;
+  position: relative;
+}
+
+#cookies .close:after {
+  content: "\78";
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cookies a {color: #e76a68;}
+#cookies a:hover {color: #ffa5af;}
+
+#login-form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+img {margin: 10px;}
+
+.title {
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-panel {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: #ffffff;
+}
+
+.username,
+.password {
+	-webkit-box-shadow: inset 1px 1px 0px 0px rgba(209,209,209,0.8);
+	-moz-box-shadow: inset 1px 1px 0px 0px rgba(209,209,209,0.8);
+	box-shadow: inset 1px 1px 0px 0px rgba(209,209,209,0.8);
+  padding: 20px;
+  padding-left: 40px;
+	width: 100%;
+	font-size: 16px;
+	border: 0;
+	color: #8a8a8a;
+	outline: none;
+}
+
+.username {
+	background: url(../images/username.png) no-repeat left center;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.password {background: url(../images/password.png) no-repeat left center;}
+
+.input-submit {
+	display: block;
+	padding: 16px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	border: 1px solid #cf4b4b;
+	background: #cf4b4b;
+	color: #ffffff;
+	text-shadow: 0 0 1px grey;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.input-submit:hover {cursor: pointer;}
+
+/* landscape styles here */
+@media screen and (min-aspect-ratio: 13/9) and (max-width: 768px) {
+  #login-form {width: 50%; top: 0px;}
+}
+
+/* portrait styles here */
+@media screen and (max-aspect-ratio: 13/9) and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  #login-form {width: 300px;}
+}
